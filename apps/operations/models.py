@@ -10,7 +10,8 @@ UserProfile = get_user_model()
 class UserAsk(BaseModel):
     name = models.CharField(verbose_name="姓名", max_length=20)
     stu_num = models.IntegerField(verbose_name="手机", max_length=11)
-    course_name = models.ForeignKey(verbose_name="课程名", max_length=50)
+    course_name = models.ForeignKey(Course, verbose_name="课程名", on_delete=models.SET_NULL, max_length=50,
+                                    null=True, blank=True)
 
     class Meta:
         verbose_name = "用户咨询"

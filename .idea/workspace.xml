@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a852d34b-51a1-4cca-8681-b546f2e80efe" name="默认更改列表" comment="[ADD]ClassProject:Create ClassProject">
-      <change afterPath="$PROJECT_DIR$/apps/courses/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/operations/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/organizations/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassProject/settings.py" afterDir="false" />
+    <list default="true" id="a852d34b-51a1-4cca-8681-b546f2e80efe" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/apps/operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/operations/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/operations/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="315">
+              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -124,9 +118,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="450" />
-    <option name="y" value="430" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="249" />
+    <option name="y" value="145" />
     <option name="width" value="1557" />
     <option name="height" value="1084" />
   </component>
@@ -142,11 +136,6 @@
             <path>
               <item name="ClassProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClassProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassProject" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563089082379</updated>
       <workItem from="1563089084629" duration="3760000" />
-      <workItem from="1563093376555" duration="11614000" />
+      <workItem from="1563093376555" duration="11886000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD]ClassProject:Create ClassProject">
       <created>1563090625827</created>
@@ -226,20 +215,27 @@
       <option name="project" value="LOCAL" />
       <updated>1563090625827</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Design model">
+      <created>1563108228453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563108228453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15374000" />
+    <option name="totallyTimeSpent" value="15646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="450" y="430" width="1557" height="1084" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11359026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09041981" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="manage.py@ClassProject" visible="true" weight="0.28820962" />
+      <window_info active="true" anchor="bottom" id="manage.py@ClassProject" visible="true" weight="0.2972973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33083645" />
@@ -293,7 +289,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[ADD]ClassProject:Create ClassProject" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD]ClassProject:Create ClassProject" />
+    <MESSAGE value="Design model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design model" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ClassProject/urls.py">
@@ -412,8 +409,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/operations/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="315">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
