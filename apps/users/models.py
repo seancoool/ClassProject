@@ -15,7 +15,7 @@ class UserProfile(AbstractUser):
     birthday = models.DateField(verbose_name="生日", null=True, blank=True)
     gender = models.CharField(verbose_name="性别", max_length=6, choices=GENDER_CHOICES)
     address = models.CharField(verbose_name="地址", max_length=120, default="")
-    mobile = models.CharField(verbose_name="手机号码", max_length=11, unique=True)
+    mobile = models.CharField(verbose_name="手机号码", max_length=11)
     image = models.ImageField(verbose_name="头像", upload_to="head_image/%Y/%m", default='default.jpg', max_length=100)
 
     class Meta:

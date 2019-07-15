@@ -9,13 +9,15 @@ UserProfile = get_user_model()
 
 class UserAsk(BaseModel):
     name = models.CharField(verbose_name="姓名", max_length=20)
-    stu_num = models.IntegerField(verbose_name="手机", max_length=11)
-    course_name = models.ForeignKey(Course, verbose_name="课程名", on_delete=models.SET_NULL, max_length=50,
-                                    null=True, blank=True)
+    mobile = models.CharField(verbose_name="手机", max_length=11)
+    course_name = models.CharField(verbose_name="课程名", max_length=50)
 
     class Meta:
         verbose_name = "用户咨询"
         verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return "{name}_{course}({mobile})".format(name=self.name, course=self.course_name, mobile=self.mobile)
 
 
 class CourseComment(BaseModel):
@@ -27,16 +29,21 @@ class CourseComment(BaseModel):
         verbose_name = "课程评论"
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.comment
+
 
 class UserFavorite(BaseModel):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name="用户")
     fav_id = models.IntegerField(verbose_name="数据id", null=True, blank=True)
-    type = models.IntegerField(verbose_name="收藏类型", max_length=300, default=1,
-                               choices=((1, '课程'), (2, '课程机构'), (3, '讲师')))
+    type = models.IntegerField(verbose_name="收藏类型", default=1, choices=((1, '课程'), (2, '课程机构'), (3, '讲师')))
 
     class Meta:
         verbose_name = "用户收藏"
         verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return "{user}_{id}".format(user=self.user, id=self.fav_id)
 
 
 class UserMessage(BaseModel):
@@ -48,6 +55,9 @@ class UserMessage(BaseModel):
         verbose_name = "用户消息"
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.message
+
 
 class UserCourse(BaseModel):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name="用户")
@@ -57,6 +67,8 @@ class UserCourse(BaseModel):
         verbose_name = "用户课程"
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.course.name
 
 
 
